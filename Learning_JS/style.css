@@ -1,0 +1,12 @@
+#bulb{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+#btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 80px;
+    cursor: pointer;
+}
