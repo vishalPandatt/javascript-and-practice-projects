@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  text-align: center;
+  display: block;
+}
 span{
     display: block;
 }
@@ -29,4 +33,14 @@ span{
 }
 #yellow {
   background: yellow;
+}
+
+
+
+.colorr{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 150px;
+  margin: auto;
 }

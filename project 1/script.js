@@ -19,3 +19,24 @@ buttons.forEach(function (button) {
   });
 });
 
+                                                        // Color Generator
+
+const btn = document.querySelector(".random");
+btn.addEventListener("click",function(){
+  let h3 = document.querySelector("h3");
+  let randomColor= getRandomColor();
+  h3.innerText = randomColor;
+
+  let div = document.querySelector(".colorr");
+  div.style.backgroundColor = randomColor;
+  console.log("color Updated!");
+})
+
+function getRandomColor(){
+  let red = Math.floor(Math.random()*255);
+  let green = Math.floor(Math.random()*255);
+  let blue = Math.floor(Math.random()*255);
+
+  let color = `rgb(${red},${green},${blue})`;
+  return color;
+}
