@@ -751,21 +751,36 @@
 
 
                            // Event Listeners practice
-let btns = document.querySelectorAll("button");         //Event when click (onclick)
-for(btn of btns){
-    btn.onclick = aleartt;
-    btn.onmouseenter = function(){                          //Event when mouse Enter (on mouse enter)
-        console.log("You pointer on button");
-    }
-    console.dir(btn);
-    btn.addEventListener("click",aleartt);              // Event when clicked (add Event Listener)
-}
-function aleartt(){
-    console.log("Clicked");
-    alert("clicked");
-}
+// let btns = document.querySelectorAll("button");         //Event when click (onclick)
+// for(btn of btns){
+//     btn.onclick = aleartt;
+//     btn.onmouseenter = function(){                          //Event when mouse Enter (on mouse enter)
+//         console.log("You pointer on button");
+//     }
+//     console.dir(btn);
+//     btn.addEventListener("click",aleartt);              // Event when clicked (add Event Listener)
+// }
+// function aleartt(){
+//     console.log("Clicked");
+//     alert("clicked");
+// }
 
-                           
+// let btn = document.querySelector("button");
+// btn.addEventListener("click",function(e){            //defalt parameter (e). it's have many propties. like (key,code).
+//     console.log(e);                             //defalt parameter known as event
+//     console.log(this);                              // this (here the use of this is to print info abt btn)
+//     console.log(this.innerText)
+// })
+// btn.addEventListener("keydown", function(e){
+//     console.log("keyboard button presed");                  // keyBorad Event Listner
+//     console.log(e.key);                             // Key used to triger the action like what click on keyboard
+// }) 
+
+
+
+
+
+                                                        // practice (light on off)
 // let on = document.querySelector("#bulb");
 // let ttn = document.querySelector("#btn");
 // let flag = 0;
