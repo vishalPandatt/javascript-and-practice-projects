@@ -764,23 +764,7 @@
 //     console.log("Clicked");
 //     alert("clicked");
 // }
-
-// let btn = document.querySelector("button");
-// btn.addEventListener("click",function(e){            //defalt parameter (e). it's have many propties. like (key,code).
-//     console.log(e);                             //defalt parameter known as event
-//     console.log(this);                              // this (here the use of this is to print info abt btn)
-//     console.log(this.innerText)
-// })
-// btn.addEventListener("keydown", function(e){
-//     console.log("keyboard button presed");                  // keyBorad Event Listner
-//     console.log(e.key);                             // Key used to triger the action like what click on keyboard
-// }) 
-
-
-
-
-
-                                                        // practice (light on off)
+                                                        // practice (light on off) with click event listener
 // let on = document.querySelector("#bulb");
 // let ttn = document.querySelector("#btn");
 // let flag = 0;
@@ -795,3 +779,77 @@
 //         ttn.innerText = "ON";
 //     }
 // });
+
+
+// let btn = document.querySelector("button");
+// btn.addEventListener("click",function(e){            //defalt parameter (e). it's have many propties. like (key,code).
+//     console.log(e);                             //defalt parameter known as event
+//     console.log(this);                              // this (here the use of this is to print info abt btn)
+//     console.log(this.innerText)
+// })
+// btn.addEventListener("keydown", function(e){
+//     console.log("keyboard button presed");                  // keyBorad Event Listner
+//     console.log(e.key);                             // Key used to triger the action like what click on keyboard
+// }) 
+
+// let form = document.querySelector("form");
+// form.addEventListener("submit",function(event){          // submit event listener
+//     event.preventDefalt();
+//     alert("Form Submitted! ");
+//     let inp = document.querySelector("input");
+//     console.log(inp);
+// })
+
+// let foorm = document.querySelector("form");
+// foorm.addEventListener("submit", function(event){
+//     event.preventDefault();                                    // help to stop defalt actions
+//     let input = document.querySelector("input");
+//     console.log(input.value);                                   // value of the input which is entered into input box by user
+// })
+
+    // foorm.addEventListener("submit", function(event){
+    //     event.preventDefault();
+    //     console.dir(foorm);
+    //     let user = foorm.elements[0];                       // elements help to access the child element
+    //     console.log(user.value);                                // it print same value as 791 line code print the value
+    // })
+
+    // let foorm = document.querySelector("form");
+    // foorm.addEventListener("submit",function(event){
+    //     event.preventDefault();
+    //     console.log("form submitted")
+    // });
+    // let user = document.querySelector("#user");
+    // user.addEventListener("change",function(){                  // change given value after we write all input and press somewhere 
+    //     console.log(this.value)
+    //     console.log(`change value = ${this.value}`);
+    // });
+
+    // user.addEventListener("input",function(){                   // input given value every charactor which is input by user
+    //     console.log(`Input value = ${this.value}`);
+    // });
+
+                                                    // practice (input event listener) Text Editor
+
+    // let inp = document.querySelector("#input");
+    // let out = document.querySelector("p");
+    // inp.addEventListener("input", function(){
+    //     out.innerText = inp.value;
+    // });
+
+    // let inp = document.querySelector("#input");
+    // let h3 = document.querySelector("h3");
+    
+    // h3.addEventListener("mouseout",function(){                  // Mouse Out event
+    //     console.log("mouse Out");
+    // });
+
+    // inp.addEventListener("keypress",function(){                 // Keypress event
+    //     console.log("key Preshed!");
+    //     console.log(inp.value);
+    // })
+
+    // inp.addEventListener("scroll",function(){
+    //     console.log("scroll!")
+    // })
+    
