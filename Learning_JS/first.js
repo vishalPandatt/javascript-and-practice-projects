@@ -853,3 +853,52 @@
     //     console.log("scroll!")
     // })
     
+
+    // let lis = document.querySelectorAll("li");
+    // let ul = document.querySelector("ul");
+    // ul.addEventListener("click",function(){
+    //     console.log("ul clicked!");
+    // });
+
+    // for(let li of lis){
+    //     li.addEventListener("click",function(event){
+    //         event.stopPropagation();                    // top propagation use to stop event bubblinh     
+    //         console.log("li clicked !");
+    //      })
+    //     };
+
+                                                  //TODO List
+
+let button = document.querySelector("button");
+let ul = document.querySelector("ul");
+let inp = document.querySelector("input");
+
+button.addEventListener("click",function(event){
+
+    let item = document.createElement("li");
+    item.innerHTML = inp.value;
+    ul.appendChild(item);
+
+    let delBtn = document.createElement("button");
+    delBtn.innerText = " Delete";
+    delBtn.classList.add("delete");
+    item.appendChild(delBtn);
+
+    inp.value = "";
+});
+
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName == "BUTTON"){                       // taget show that which item has been trigered
+        let listItem = event.target.parentElement;
+        listItem.remove();
+        console.log("Deleted!");
+    }
+});
+
+// let delBtns = document.querySelectorAll(".delete");              // this is not use because of event bubbling
+//     for(delBtn of delBtns){
+//         delBtn.addEventListener("click",function(){
+//         let par = this.parentElement;
+//         par.remove();
+//     })
+// }
