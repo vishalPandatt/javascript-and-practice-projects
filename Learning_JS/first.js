@@ -869,31 +869,31 @@
 
                                                   //TODO List
 
-let button = document.querySelector("button");
-let ul = document.querySelector("ul");
-let inp = document.querySelector("input");
+// let button = document.querySelector("button");
+// let ul = document.querySelector("ul");
+// let inp = document.querySelector("input");
 
-button.addEventListener("click",function(event){
+// button.addEventListener("click",function(event){
 
-    let item = document.createElement("li");
-    item.innerHTML = inp.value;
-    ul.appendChild(item);
+//     let item = document.createElement("li");
+//     item.innerHTML = inp.value;
+//     ul.appendChild(item);
 
-    let delBtn = document.createElement("button");
-    delBtn.innerText = " Delete";
-    delBtn.classList.add("delete");
-    item.appendChild(delBtn);
+//     let delBtn = document.createElement("button");
+//     delBtn.innerText = " Delete";
+//     delBtn.classList.add("delete");
+//     item.appendChild(delBtn);
 
-    inp.value = "";
-});
+//     inp.value = "";
+// });
 
-ul.addEventListener("click",function(event){
-    if(event.target.nodeName == "BUTTON"){                       // taget show that which item has been trigered
-        let listItem = event.target.parentElement;
-        listItem.remove();
-        console.log("Deleted!");
-    }
-});
+// ul.addEventListener("click",function(event){
+//     if(event.target.nodeName == "BUTTON"){                       // taget show that which item has been trigered
+//         let listItem = event.target.parentElement;
+//         listItem.remove();
+//         console.log("Deleted!");
+//     }
+// });
 
 // let delBtns = document.querySelectorAll(".delete");              // this is not use because of event bubbling
 //     for(delBtn of delBtns){
@@ -902,3 +902,26 @@ ul.addEventListener("click",function(event){
 //         par.remove();
 //     })
 // }
+
+// function hello(){
+//     console.log("inside Hello\n");
+//     console.log("hello\n")
+// }
+// function callHello(){
+//     console.log("inside callHello\n");
+//     hello();
+// };
+// console.log("Outside Call hello")                           // call stack (Use last in first out)
+// callHello();
+                                            // call stack practice
+// function one(){
+//     return 1;
+// };
+// function two(){
+//     return one() + one();
+// };
+// function three(){
+//     let ans = two() + one();
+//     console.log(ans);
+// };
+// three();     
