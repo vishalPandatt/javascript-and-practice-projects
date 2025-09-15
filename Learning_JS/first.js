@@ -911,17 +911,18 @@
 //     console.log("inside callHello\n");
 //     hello();
 // };
+
 // console.log("Outside Call hello")                           // call stack (Use last in first out)
 // callHello();
                                             // call stack practice
-// function one(){
-//     return 1;
-// };
-// function two(){
-//     return one() + one();
-// };
-// function three(){
-//     let ans = two() + one();
-//     console.log(ans);
-// };
-// three();     
+function one(){
+    return 1;
+};
+function two(){
+    return one() + one();
+};
+function three(){
+    let ans = two() + one();
+    console.log(ans);
+};
+three();                                     // learning breakPoints on inspect window  
