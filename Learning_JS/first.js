@@ -915,14 +915,49 @@
 // console.log("Outside Call hello")                           // call stack (Use last in first out)
 // callHello();
                                             // call stack practice
-function one(){
-    return 1;
-};
-function two(){
-    return one() + one();
-};
-function three(){
-    let ans = two() + one();
-    console.log(ans);
-};
-three();                                     // learning breakPoints on inspect window  
+// function one(){
+//     return 1;
+// };
+// function two(){
+//     return one() + one();
+// };
+// function three(){
+//     let ans = two() + one();
+//     console.log(ans);
+// };
+// three();                                     // learning breakPoints on inspect window  
+
+
+// h1 = document.querySelector("h1");
+// setTimeout (()=>{
+//     h1.style.color = "red";    
+// },2000);
+
+// setTimeout (()=>{
+//     h1.style.color = "green";    
+// },3000);
+
+// setTimeout (()=>{
+//     h1.style.color = "orange";    
+// },4000);
+
+                                                            //Callback Hell
+// h1 = document.querySelector("h1");
+// function changeColor(color, deley, nextColorChange){
+//     setTimeout(()=>{
+//         h1.style.color = color;
+//     if (nextColorChange) nextColorChange();
+//     },deley);
+// };
+
+// changeColor("red",1000, ()=>{
+//     changeColor("orange",2000,  () =>{
+//         changeColor("green",1000, ()=>{
+//             changeColor("blue",1000,()=>{
+//                 changeColor("yellow",1000,()=>{
+
+//                 });
+//             });
+//         });
+//     });
+// });
