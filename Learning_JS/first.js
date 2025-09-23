@@ -961,3 +961,48 @@
 //         });
 //     });
 // });
+
+// function saveToDb(data, successs, failure){                         // callback hell
+//     let internetSpeed = Math.floor(Math.random()*10)+1;
+//     if(internetSpeed > 4){
+//         successs();
+//     }else{
+//         failure();
+//     }
+// };
+
+// saveToDb("vishal vashishth",()=>{
+//     console.log("data is saved! ");             //nasted 1 
+//     saveToDb("Hello world",() =>{
+//         console.log("data2 is saved");          //nasted 2
+//         saveToDb("Sharma JI",() =>{
+//         console.log("data3 is saved");
+//     },()=>{
+//         console.log("weak Connetion! ")
+//     });
+//     },()=>{
+//         console.log("weak Connetion! ")
+//     });
+// },()=>{
+//     console.log("weak connection! ")
+// }
+// )
+
+// function saveToDb(data){                                       //Promise
+//     return new Promise((resolve,reject)=>{
+//         let internetSpeed = Math.floor(Math.random()*10)+1;
+//         if(internetSpeed > 4){
+//             resolve();
+//         }else{
+//             reject();
+//         };
+//     });
+// };
+
+// let request = saveToDb("Vishal Vashishth ")  // req =  promise object
+// .then(()=>{                                                  // use then or catch in promise
+//     console.log("resolved! ");
+// })
+// .catch(()=>{
+//     console.log("rejected! ")
+// });
