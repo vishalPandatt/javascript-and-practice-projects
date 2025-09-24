@@ -2,6 +2,8 @@ let userInput = document.getElementById("date");
 
 userInput.max = new Date().toISOString().split("T")[0];
 
+userInput.addEventListener("change", calculateAge);
+
 function calculateAge(){
     let birthDate = new Date(userInput.value);
 

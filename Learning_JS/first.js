@@ -992,17 +992,35 @@
 //     return new Promise((resolve,reject)=>{
 //         let internetSpeed = Math.floor(Math.random()*10)+1;
 //         if(internetSpeed > 4){
-//             resolve();
+//             resolve("Resolved");
 //         }else{
-//             reject();
+//             reject("Rejected!");
 //         };
 //     });
 // };
 
-// let request = saveToDb("Vishal Vashishth ")  // req =  promise object
-// .then(()=>{                                                  // use then or catch in promise
-//     console.log("resolved! ");
+// let request = saveToDb("Vishal Vashishth ")             // req =  promise object
+// .then((result)=>{                                                  // use then or catch in promise
+//     console.log("data1 Saved! ");
+//     console.log(result);
+    
+//     // saveToDb("hello world")                     // nasted promise 
+//     // .than(() =>{
+//     //     console.log("data 2 saved!");
+//     // });
+
+//     return saveToDb("hello world! ");
 // })
-// .catch(()=>{
-//     console.log("rejected! ")
+// .then((result) =>{
+//     console.log("data2 saved! ");
+//     console.log(result);
+//     return saveToDb("Vishal Sharma");                       //promise chaining
+// })
+// .then((result) => {
+//     console.log("data3 Saved!")
+//     console.log(result);
+// })
+// .catch((error)=>{
+//     console.log("Weak connection!");
+//     console.log(error);
 // });
