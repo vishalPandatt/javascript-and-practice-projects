@@ -914,7 +914,7 @@
 
 // console.log("Outside Call hello")                           // call stack (Use last in first out)
 // callHello();
-                                            // call stack practice
+//                                            // call stack practice
 // function one(){
 //     return 1;
 // };
@@ -941,7 +941,7 @@
 //     h1.style.color = "orange";    
 // },4000);
 
-                                                            //Callback Hell
+//                                                            // Callback Hell
 // h1 = document.querySelector("h1");
 // function changeColor(color, deley, nextColorChange){
 //     setTimeout(()=>{
@@ -1004,10 +1004,10 @@
 //     console.log("data1 Saved! ");
 //     console.log(result);
     
-//     // saveToDb("hello world")                     // nasted promise 
-//     // .than(() =>{
-//     //     console.log("data 2 saved!");
-//     // });
+//     saveToDb("hello world")                     // nasted promise 
+//     .than(() =>{
+//         console.log("data 2 saved!");
+//     });
 
 //     return saveToDb("hello world! ");
 // })
@@ -1024,6 +1024,3 @@
 //     console.log("Weak connection!");
 //     console.log(error);
 // });
-
-
- 
