@@ -1024,3 +1024,13 @@
 //     console.log("Weak connection!");
 //     console.log(error);
 // });
+
+// let factPara = document.querySelector("#fact");
+// let URL = "https://dogapi.dog/api/facts";                  // fetch API
+// const getFacts = async() =>{
+// let responce = await fetch(URL);
+// console.log(responce);
+//     let data = await responce.json();
+//     factPara.innerText = data.facts[0];
+// };
+// getFacts();
