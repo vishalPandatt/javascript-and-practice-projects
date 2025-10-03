@@ -1034,3 +1034,17 @@
 //     factPara.innerText = data.facts[0];
 // };
 // getFacts();
+
+// let URL = "https://dogapi.dog/api/facts";   
+// fetch(URL)
+// .then((responce) =>{                     // fetch API 
+//     // console.log(responce);
+//     responce.json()
+//     .then((data) =>{
+//         console.log(data.facts[0]);
+//     });
+// })
+// .catch((error) =>{
+//     console.log(error);
+// });
+
