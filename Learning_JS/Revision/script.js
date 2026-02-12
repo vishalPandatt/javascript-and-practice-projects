@@ -91,3 +91,10 @@ switch (day) {
         console.log("Invalid day");
 }
 
+// Loops in JavaScript: --
+
+// 1. For Loop: It is used to repeat a block of code a specified number of times. For example:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
