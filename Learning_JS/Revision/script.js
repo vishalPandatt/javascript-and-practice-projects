@@ -105,6 +105,9 @@
 
 // Call Stack in JS: --call stack is a use to execute the code in order. JS is a synchronous single threaded language. It means that only one thing can be executed at a time. The call stack is a data structure that keeps track of the function calls in the program. When a function is called, it is added to the call stack. When the function is finished executing, it is removed from the call stack. If there are any errors in the code, they will be thrown when the function is executed and will be caught by the call stack. 
 
+// but we can only access var variable before iniclize it. we can not access let and const variable before iniclize it. because of the temporal dead zone. The temporal dead zone is the time between the creation of the variable and its iniclization. During this time, the variable is in a state of "dead" and cannot be accessed. If we try to access the variable during this time, it will throw a ReferenceError.
+
+// let or const veriable are iniclized in different location in memory than var variable. var variable is iniclized in global scope and let and const variable are iniclized in block scope.
 
 // var x = 1;
 // a();
@@ -124,10 +127,25 @@
 
 // Scope: where we can access the variable and function in our code. There are three types of scope in JavaScript: --
 
-// 1. Global Scope: Variables and functions defined in the global scope can be accessed from anywhere in the code. For example:
+// 1. Global Scope: Variables and functions defined in the global scope can be accessed from anywhere in the code.
 
-// 2. Local Scope: Variables and functions defined in a local scope can only be accessed within that scope. For example:
+// 2. Local Scope: Variables and functions defined in a local scope can only be accessed within that scope.
 
-// 3. Block Scope: Variables and functions defined in a block scope can only be accessed within that block. For example:
+// 3. Block Scope: Variables and functions defined in a block scope can only be accessed within that block.
 
-// Laxical Envirment in JS: --Laxical Envirment is a concept in JavaScript that refers to the way variables and functions are scoped. It is the environment in which the code is executed. The lexical environment consists of the variables and functions that are defined in the current scope. When a function is called, it creates a new lexical environment that is nested inside the previous one. This allows for variable and function scoping, which means that variables and functions defined in one scope are not accessible in another scope. The lexical environment also allows for closures, which are functions that have access to variables and functions defined in their outer scope. 
+// Scope Chain: -- Scope chain is a mechanism that allows a function to access variables and functions defined in its parent scope. When a function is called, it creates a new scope. If the function tries to access a variable or function that is not defined in its own scope, it will look for it in the parent scope. This process continues until it reaches the global scope. If the variable or function is not found in any of the scopes, it will return undefined.
+
+// Laxical Envirment in JS: -- Laxica Envirment is a local memory where the variable and function are stored. It is created when a function is called and destroyed when the function is finished executing.
+
+
+// Unfdefined: -- It is a default value of a variable that has been declared but has not been assigned a value. 
+
+// Not Defined: -- It is an error that occurs when we try to access a variable that has not been declared.
+
+// Null: -- It is a value that represents the absence of any value. It is an assignment value that can be assigned to a variable to indicate that it has no value.
+
+// TypeError: -- It is an error that occurs when we try to perform an operation on a value of the wrong type. For example, if we try to call a function on a variable that is not a function, it will throw a TypeError.
+
+// SyntaxError: -- It is an error that occurs when we try to execute code that has a syntax error. For example, if we forget to close a parenthesis or a curly brace, it will throw a SyntaxError.
+
+// ReferenceError: -- It is an error that occurs when we try to access a variable that is not defined. For example, if we try to access a variable that has not been declared, it will throw a ReferenceError.
