@@ -104,3 +104,30 @@
 // we can access the function even before we have iniclize it.
 
 // Call Stack in JS: --call stack is a use to execute the code in order. JS is a synchronous single threaded language. It means that only one thing can be executed at a time. The call stack is a data structure that keeps track of the function calls in the program. When a function is called, it is added to the call stack. When the function is finished executing, it is removed from the call stack. If there are any errors in the code, they will be thrown when the function is executed and will be caught by the call stack. 
+
+
+// var x = 1;
+// a();
+// b();
+// console.log(x);
+
+// function a() {
+//     var x = 2;
+//     console.log(x);
+// };
+
+// function b() {
+//     var x = 3;
+//     console.log(x);
+// }
+
+
+// Scope: where we can access the variable and function in our code. There are three types of scope in JavaScript: --
+
+// 1. Global Scope: Variables and functions defined in the global scope can be accessed from anywhere in the code. For example:
+
+// 2. Local Scope: Variables and functions defined in a local scope can only be accessed within that scope. For example:
+
+// 3. Block Scope: Variables and functions defined in a block scope can only be accessed within that block. For example:
+
+// Laxical Envirment in JS: --Laxical Envirment is a concept in JavaScript that refers to the way variables and functions are scoped. It is the environment in which the code is executed. The lexical environment consists of the variables and functions that are defined in the current scope. When a function is called, it creates a new lexical environment that is nested inside the previous one. This allows for variable and function scoping, which means that variables and functions defined in one scope are not accessible in another scope. The lexical environment also allows for closures, which are functions that have access to variables and functions defined in their outer scope. 
