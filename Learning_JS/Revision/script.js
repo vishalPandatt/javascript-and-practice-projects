@@ -149,3 +149,18 @@
 // SyntaxError: -- It is an error that occurs when we try to execute code that has a syntax error. For example, if we forget to close a parenthesis or a curly brace, it will throw a SyntaxError.
 
 // ReferenceError: -- It is an error that occurs when we try to access a variable that is not defined. For example, if we try to access a variable that has not been declared, it will throw a ReferenceError.
+
+
+// Block Scope:-- Block scope is a type of scope that is created by a block of code, such as a loop or an if statement. Variables and functions defined in a block scope can only be accessed within that block.
+
+// Function Scope:-- Function scope is a type of scope that is created by a function. Variables and functions defined in a function scope can only be accessed within that function.
+
+// Shadowing:-- Shadowing is a phenomenon that occurs when a variable or function in a local scope has the same name as a variable or function in a parent scope. In this case, the variable or function in the local scope will "shadow" the variable or function in the parent scope, meaning that it will take precedence over it.
+// we can not shadowing a let or const variable in var variable but we can shadowing a var variable in let or const variable. because of the temporal dead zone. 
+
+// Laximal Scope: -- Block inside another block. each block has its own scope. The inner block can access the variables and functions of the outer block, but the outer block cannot access the variables and functions of the inner block. This is called lexical scope.
+
+// Closures: -- A closure is a function that has access to the variables and functions of its parent scope, even after the parent function has finished executing. This is because the inner function retains a reference to the variables and functions of the outer function, allowing it to access them even after the outer function has returned. Closures are often used to create private variables and functions, as well as to implement data encapsulation and modular programming.
+// (function along with its lexical scope bundole together is called closure)
+
+//  currying: -- Currying is a functional programming that transforms a function with multiple arguments into a sequence of functions that each take a single argument.
