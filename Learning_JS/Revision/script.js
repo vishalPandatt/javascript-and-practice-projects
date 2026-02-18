@@ -1,3 +1,6 @@
+// // Function Feature: -- we can assign a function to a variable, we can pass a function as an argument to another function, we can return a function from a function, we can have anonymous functions, we can have named function expressions, we can have immediately invoked function expressions (IIFE), we can have closures, we can have higher-order functions.
+
+
 // // Data Types in JavaScript: --
 
 // // Data types are mainly 2 types
@@ -164,3 +167,73 @@
 // (function along with its lexical scope bundole together is called closure)
 
 //  currying: -- Currying is a functional programming that transforms a function with multiple arguments into a sequence of functions that each take a single argument.
+
+// Higher Order Function: -- A higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result.
+
+// Recursion: -- Recursion is a programming technique in which a function calls itself in order to solve a problem. Recursion can be used to solve problems that can be broken down into smaller, similar subproblems. 
+
+
+// Asynchronous Programming: -- Asynchronous programming is a programming paradigm that allows for non-blocking operations. In JavaScript, asynchronous programming is often achieved using callbacks, promises, and async/await syntax. For example, when making an API call, instead of blocking the main thread while waiting for the response, asynchronous programming allows the application to continue running and handle the response once it is received.
+
+// Event Delegation: -- Event delegation is a technique in JavaScript that allows you to handle events on a parent element instead of attaching event listeners to individual child elements.
+
+// Prototypal Inheritance: -- Prototypal inheritance is a feature in JavaScript that allows objects to inherit properties and methods from other objects. In JavaScript, every object has a prototype, which is another object that it inherits from.
+
+// Event Bubbling: -- Event bubbling is a mechanism in JavaScript where an event starts from the target element and then propagates up through its ancestors in the DOM tree. When an event occurs on an element, it first triggers any event handlers attached to that element, and then it continues to bubble up to its parent elements, triggering any event handlers attached to those parents as well. This process continues until it reaches the root of the DOM tree. Event bubbling allows for efficient event handling.
+
+// Event Capturing: -- Event capturing is a mechanism in JavaScript where an event starts from the root of the DOM tree and propagates down to the target element. When an event occurs, it first triggers any event handlers attached to the root element, and then it continues to capture down through its descendants until it reaches the target element, triggering any event handlers attached to those descendants as well.
+
+
+// Debouncing: -- Debouncing is a technique in JavaScript that limits the rate at which a function can be executed.
+
+
+// Throttling: -- Throttling is a technique in JavaScript that limits the number of times a function can be executed over a certain period of time. It is often used to improve performance and reduce the number of times a function is called in response to events such as scrolling, resizing, or typing.
+
+
+// Memoization: -- Memoization is a technique in JavaScript that optimizes the performance of a function by caching its results. When a memoized function is called with a particular set of arguments, it checks if the result for those arguments is already stored in the cache. If it is, it returns the cached result instead of executing the function again. If not, it executes the function, stores the result in the cache, and then returns it. This can significantly improve the performance of functions.
+
+// Ṣet timeout: -- The setTimeout() function is a built-in JavaScript function that allows you to execute a function after a specified delay. It takes two arguments: the first is the function to be executed, and the second is the delay in milliseconds before the function is executed. For example, setTimeout(() => { console.log("Hello, World!"); }, 1000); will log "Hello, World!" to the console after a delay of 1 second (1000 milliseconds).
+
+// function greet(){
+//     let i =0;
+//     setTimeout(function(){
+//         console.log(i);
+//     }, 1000);
+//     console.log("Hello, World!");
+// };
+
+// greet();
+
+// Anonymous Function: -- An anonymous function is a function that does not have a name. It is often used as a callback function or as an argument to another function. 
+
+
+// Immediately Invoked Function Expression (IIFE): -- An IIFE is a function that is defined and executed immediately. It is often used to create a new scope and avoid polluting the global scope.
+
+
+// Function Statement and Function Expression: -- A function statement is a function that is defined using the function keyword and has a name. we can access the function before iniclize it because of hosting.
+// // Example:
+// function greet() {
+//     console.log("Hello, World!");
+// }
+
+// Function Expression: -- A function expression is a function that is defined using the function keyword and does not have a name. It can be assigned to a variable or passed as an argument to another function.Example:
+// let greet = function() {
+//     console.log("Hello, World!");
+// }
+
+// Named Function Expression: -- A named function expression is a function that is defined using the function keyword and has a name. It can be assigned to a variable or passed as an argument to another function. Example:
+// let greet = function greetFunction() {
+//     console.log("Hello, World!");
+// }
+
+// Different between Parameter and Argument: -- A parameter is a variable that is defined in the function declaration and is used to receive a value when the function is called. An argument is the actual value that is passed to the function when it is called.
+//  For example, in the function declaration function greet(name) { console.log("Hello, " + name); }, name is a parameter. When we call the function greet("John"), "John" is an argument.
+
+// First Class Function: -- A first-class function is a function that can be treated as a first-class citizen in a programming language. This means that the function can be assigned to a variable, passed as an argument to another function, and returned from a function.
+
+// Function Feature: -- we can assign a function to a variable, we can pass a function as an argument to another function, we can return a function from a function, we can have anonymous functions, we can have named function expressions, we can have immediately invoked function expressions (IIFE), we can have closures, we can have higher-order functions.
+
+// Arrow Function: -- An arrow function is a concise way to write a function in JavaScript. It is defined using the => syntax and does not have its own this, arguments, super, or new.target. Arrow functions are often used for short, simple functions and for functions that do not require their own this context. For example:
+// let greet = (name) => {
+//     console.log("Hello, " + name);
+// }
